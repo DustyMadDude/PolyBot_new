@@ -15,10 +15,10 @@ pipeline {
     }
     // env and image vars
     environment {
-    IMAGE_NAME = "yf-bot-ecr"
+    IMAGE_NAME = "yf-bot-ecr-dev"
     IMAGE_TAG = "0.0.$BUILD_NUMBER"
     WS = "/home/ec2-user/workspace/dev/botBuild/"
-    ECR_REGISTRY = "public.ecr.aws/r7m7o9d4"
+    ECR_REGISTRY = "352708296901.dkr.ecr.eu-central-1.amazonaws.com"
     TEAM_EMAIL = 'yuval.fid@gmail.com'
 
     }
@@ -29,7 +29,7 @@ pipeline {
                 // from jenkins demo build
                 sh 'echo building...'
                 sh '''
-                aws ecr-public get-login-password --region us-east-1 | docker login --username AWS --password-stdin $ECR_REGISTRY
+                aws ecr get-login-password --region eu-central-1 | docker login --username AWS --password-stdin $ECR_REGISTRY
                 docker build -t $IMAGE_NAME:$IMAGE_TAG . -f services/bot/Dockerfile
 
 
