@@ -19,7 +19,7 @@ pipeline {
     IMAGE_TAG = "0.0.$BUILD_NUMBER"
     WS = "/home/ec2-user/workspace/dev/botBuild/"
     ECR_REGISTRY = "352708296901.dkr.ecr.eu-central-1.amazonaws.com"
-    TEAM_EMAIL = 'yuval.fid@gmail.com'
+    TEAM_EMAIL = ''
 
     }
 
