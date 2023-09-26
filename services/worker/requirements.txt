@@ -1,5 +1,5 @@
 python-telegram-bot>=13.11
-yt-dlp==2022.11.11
+yt-dlp==2023.9.24
 loguru
 pytest
 unittest2
