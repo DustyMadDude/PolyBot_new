@@ -7,3 +7,4 @@ pylint_junit
 pylint
 boto3==1.26.18
 setuptools>=65.5.1 # not directly required, pinned by Snyk to avoid a vulnerability
+anyio>=4.4.0 # not directly required, pinned by Snyk to avoid a vulnerability
