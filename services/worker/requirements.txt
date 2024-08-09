@@ -1,5 +1,5 @@
 python-telegram-bot>=13.11
-yt-dlp==2022.11.11
+yt-dlp==2024.7.1
 loguru
 pytest
 unittest2
@@ -7,3 +7,4 @@ pylint_junit
 pylint
 boto3==1.26.18
 setuptools>=65.5.1 # not directly required, pinned by Snyk to avoid a vulnerability
+anyio>=4.4.0 # not directly required, pinned by Snyk to avoid a vulnerability
